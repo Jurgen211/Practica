@@ -3,13 +3,13 @@ services:
   postgres:
     image: postgres:latest
     ports:
-      - "5432:5432" # Mapea el puerto 5432 del contenedor al puerto 5432 de tu máquina local
+      -
     environment:
       POSTGRES_USER: postgres
       POSTGRES_PASSWORD: postgres
       POSTGRES_DB: postgres
     volumes:
-      - postgres_data:/var/lib/postgresql/data # Persiste los datos de la base de datos
+      - postgres_data:/var/lib/postgresql/data
 
 volumes:
   postgres_data:
