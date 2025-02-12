@@ -21,10 +21,28 @@ Antes de ejecutar el proyecto, asegúrate de tener los siguientes componentes in
 
 2. Ejecutar proyecto desde el archivo JwtApplication 
 
+3. Abrir postman en la coleccion Libreria para lo que son usuarios
+   * Ejecutar el Post de Register/User
+   * Login/User (Esto crea un web Token)
+   * Create/User
+   * FindById/User
+   * Update/User
+4. Ejecutar los siguientes Puntos de la coleccion Libreria
+   * Create/Book (Esto crea un libro y su id queda registrada en una variable global)
+   * List/Books
+   * FindById/Books
+   * Update/Books
+5. Para la solicitud de libros se utiliza los siguientes Endpoints
+   * Loan/Books (Esto realiza una peticion desde el usuario que esta logueado junto al id de algun libro y cambia su estado)
+   * Return/Books (Retorna el libro a su estado inicial y agrega una variable de la fecha de devolucion)
+
 ## Pruebas de Integracion
 
 Para ejecutar las pruebas de integracion 
 1. Entrar en las carpetas test/java/com/proyect.proy
 2. Entrar en el archivo JwtApplicationTest
 3. Ejecutar la clase con el mismo nombre
+
+## Nota
+
 
